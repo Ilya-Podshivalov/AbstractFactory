@@ -1,4 +1,5 @@
 package platform;
+import IOS.CreateIOSPlatform;
 import android.CreateAndroidPlatform;
 
 public class PlatformFactory {
@@ -9,7 +10,7 @@ public class PlatformFactory {
                 return new CreateAndroidPlatform(version);
             }
             case "IOS":{
-                return null;
+                return new CreateIOSPlatform(version);
             }
             default:
                 return null;
