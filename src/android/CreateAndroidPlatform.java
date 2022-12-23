@@ -5,10 +5,10 @@ import platform.IAction;
 import platform.IOption;
 import platform.ISAction;
 
-public class AndroidPlatform implements IPlatform{
+public class CreateAndroidPlatform implements IPlatform{
     private double version;
 
-    public AndroidPlatform(double version) {
+    public CreateAndroidPlatform(double version) {
         this.version = version;
     }
 

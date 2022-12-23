@@ -1,13 +1,12 @@
 package platform;
-import android.AndroidPlatform;
-import platform.IPlatform;
+import android.CreateAndroidPlatform;
 
 public class PlatformFactory {
     static public IPlatform createPlatform(String platformType, double version) {
         switch (platformType) {
 
-            case "Android": {
-                return new AndroidPlatform(version);
+            case "ANDROID": {
+                return new CreateAndroidPlatform(version);
             }
             case "IOS":{
                 return null;
